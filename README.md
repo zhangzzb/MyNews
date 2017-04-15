@@ -10,10 +10,8 @@
 * 使用了诸如：OKhttp、EventBus、bufferknife、skin-loader-lib、photopicker、glide、jiecaoplayer、vitamio、BaseRecyclerViewHelper等优秀开源项目
 * 后期将陆续使用MVP模式、RXJava、Retrofit等新技术插入项目当中、希望关注我的朋友能与我交流学习
 
-![](https://github.com/zhangzzb/MobileSafe/blob/master/screenshots/截图六.png) ![](https://github.com/zhangzzb/MobileSafe/blob/master/screenshots/截图四.png)
-![](https://github.com/zhangzzb/MobileSafe/blob/master/screenshots/截图二.png)
 ### 主界面
-* 常见的主页面
-* APP分为新闻、直播、动态、我的四个模块
-* 感谢诸多优秀开源项目、项目中用到的api所有权归 网易、好奇心日报、糗事新闻所有
+* Splash界面仿造网易新闻引导加载广告页
+* 主页面分为新闻、直播、动态、我的四个模块和侧滑菜单页面
+* 感谢诸多优秀开源项目、项目中用到的api所有权归网易、好奇心日报、糗事新闻所有
 * 若内容有侵权请联系作者进行删除处理。本应用仅用作分享与学习
