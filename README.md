@@ -1,6 +1,5 @@
 
-# 实践！业余时间编写的一款新闻阅读App
-* 整体项目基于 （MVC + OKHttp + RecyclerView）
+# Open source! Spare time to prepare a news reading app
 * 代码优化抽取主要类有BaseActivity、BaseFragment、BaseListFragment、BaseViewPagerFragment.
 * 使用recycleview+BaseRecyclerViewHelper第三方优秀库实现整体界面
 * 自己也封装了自定义对话框、吐司、ListView适配器、沉浸式状态栏、大图查看、数据加载界面等大量工具类
