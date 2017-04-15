@@ -8,8 +8,13 @@
 * 用到了toolbar、cardview、NavigationView、FloatingActionButton、SwipeRefreshLayout、CoordinatorLayout、CollapsingToolbarLayout等新UI控件渲染界面
 * 使用了诸如：OKhttp、EventBus、bufferknife、skin-loader-lib、photopicker、glide、jiecaoplayer、vitamio、zxing、PhotoView、BaseRecyclerViewHelper等优秀开源项目
 * 后期将陆续使用MVP模式、RXJava、Retrofit等新技术插入项目当中、希望关注我的朋友能与我交流学习
-![](https://github.com/zhangzzb/MyNew/blob/master/screenshots/截图六.png) ![](https://github.com/zhangzzb/MobileSafe/blob/master/screenshots/截图四.png)
+![](https://github.com/zhangzzb/MyNew/blob/master/screenshots/截图一.png)
 ![](https://github.com/zhangzzb/MyNew/blob/master/screenshots/截图二.png)
+![](https://github.com/zhangzzb/MyNew/blob/master/screenshots/截图三.png)
+![](https://github.com/zhangzzb/MyNew/blob/master/screenshots/截图四.png)
+![](https://github.com/zhangzzb/MyNew/blob/master/screenshots/截图五.png)
+![](https://github.com/zhangzzb/MyNew/blob/master/screenshots/截图六.png)
+
 ### 主界面
 * Splash界面仿造网易新闻引导加载广告页
 * 主页面分为新闻、直播、动态、我的四个模块和侧滑菜单页面
