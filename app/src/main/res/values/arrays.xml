@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string-array name="news_viewpage_arrays">
+        <item>头条</item>
+        <item>娱乐</item>
+        <item>段子</item>
+        <item>视频</item>
+    </string-array>
+    <string-array name="tweets_viewpage_arrays">
+        <item>最新动弹</item>
+        <item>热门动弹</item>
+        <item>我的动弹</item>
+    </string-array>
+    <string-array name="quests_viewpage_arrays">
+        <item>热点</item>
+        <item>发现</item>
+        <item>推荐</item>
+        <item>精品</item>
+    </string-array>
+    <string-array name="blogs_viewpage_arrays">
+        <item>最新博客</item>
+        <item>推荐阅读</item>
+    </string-array>
+    <string-array name="mymes_viewpage_arrays">
+        <item>我</item>
+        <item>评论</item>
+        <item>留言</item>
+        <item>粉丝</item>
+        <item>赞过我</item>
+    </string-array>
+    
+    <string-array name="choose_picture">
+        <item>相册</item>
+        <item>相机</item>
+    </string-array>
+    
+    <string-array name="friends_viewpage_arrays">
+        <item>关注</item>
+        <item>粉丝</item>
+    </string-array>
+    
+    <string-array name="message_list_options">
+        <item>复制</item>
+        <item>删除</item>
+    </string-array>
+    
+    <string-array name="gender">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+
+    <string-array name="avatar_option">
+        <item>更换头像</item>
+        <item>查看大头像</item>
+    </string-array>
+</resources>

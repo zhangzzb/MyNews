@@ -1,0 +1,1 @@
+include ':app', ':android-skin-loader-lib', ':recyclerlibrary', ':library:photoPicker', ':vitamio'

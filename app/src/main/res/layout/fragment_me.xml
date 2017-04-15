@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             xmlns:skin="http://schemas.android.com/android/skin"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             skin:enable="true"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:id="@+id/user_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                skin:enable="true"
+                android:background="@drawable/news_item_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="8.0dip" >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/header_iv"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/avatar_default" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="爱迪生"
+                        skin:enable="true"
+                        android:textColor="@color/news_item_text_color_selector"
+                        android:textSize="16sp" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6.0dip"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/depart_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#818181"
+                            android:text="技术部"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/position_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dip"
+                            android:textColor="#818181"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/iv_qr_code"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="@dimen/space_10"
+                    android:clickable="true"
+                    android:background="@color/main_gray"
+                    android:layout_gravity="right|center_vertical"
+                    android:src="@drawable/icon_qr_code" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.0dip"
+                android:background="#dddddd" />
+            <LinearLayout
+                style="@style/option_item_rl"
+                skin:enable="true"
+                android:background="@drawable/news_item_selector"
+                android:id="@+id/clear_layout"
+               >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="清空缓存"
+                    skin:enable="true"
+                    android:textColor="@color/news_item_text_color_selector"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/cache_size_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/empty" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.0dip"
+                android:background="#dddddd" />
+            <LinearLayout
+                skin:enable="true"
+                android:background="@drawable/news_item_selector"
+                style="@style/option_item_rl"
+                android:padding="8dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/auto_send_layout"
+                 >
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="是否接受推送"
+                    skin:enable="true"
+                    android:textColor="@color/news_item_text_color_selector"
+                    android:textSize="16sp" />
+                <com.zzb.mynew.view.togglebutton.util.ToggleButton
+                    android:id="@+id/auto_send_toggle"
+                    style="@style/option_item_toggleButton"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:background="#dddddd" />
+
+            <LinearLayout
+                skin:enable="true"
+                android:background="@drawable/news_item_selector"
+                style="@style/option_item_rl"
+                android:id="@+id/set_server_layout"
+                 >
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="服务器设置"
+                    skin:enable="true"
+                    android:textColor="@color/news_item_text_color_selector"
+                    android:textSize="16sp" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/empty"
+                    android:src="@drawable/arrow_right" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.0dip"
+                android:background="#dddddd" />
+
+            <LinearLayout
+                skin:enable="true"
+                android:background="@drawable/news_item_selector"
+                style="@style/option_item_rl"
+                android:id="@+id/update_layout"
+                >
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="版本更新"
+                    skin:enable="true"
+                    android:textColor="@color/news_item_text_color_selector"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.0dip"
+                android:background="#dddddd" />
+
+            <LinearLayout
+                skin:enable="true"
+                android:background="@drawable/news_item_selector"
+                style="@style/option_item_rl"
+                android:id="@+id/scan_login_layout"
+                android:gravity="center_vertical"
+               >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="二维码登录"
+                    android:gravity="center"
+                    android:id="@+id/tv_scan"
+                    skin:enable="true"
+                    android:textColor="@color/news_item_text_color_selector"
+                    android:textSize="16sp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16sp" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow_right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:background="#dddddd" />
+
+            <LinearLayout
+                skin:enable="true"
+                android:background="@drawable/news_item_selector"
+                style="@style/option_item_rl"
+                android:id="@+id/skin_layout"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:layout_marginLeft="5dp"
+               >
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="夜间模式"
+                    skin:enable="true"
+                    android:textColor="@color/news_item_text_color_selector"
+                    android:textSize="16sp" />
+                <com.zzb.mynew.view.togglebutton.util.ToggleButton
+                    android:id="@+id/auto_skin_toggle"
+                    style="@style/option_item_toggleButton"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:background="#dddddd" />
+            <LinearLayout
+                skin:enable="true"
+                android:background="@drawable/news_item_selector"
+                android:id="@+id/about_layout"
+                style="@style/option_item_rl"
+               >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="关于软件"
+                    skin:enable="true"
+                    android:textColor="@color/news_item_text_color_selector"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/empty"
+                    android:src="@drawable/arrow_right" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="#dddddd" />
+
+            <LinearLayout
+                skin:enable="true"
+                android:background="@drawable/news_item_selector"
+                style="@style/option_item_rl"
+                android:id="@+id/exit_layout"
+                android:gravity="center"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="退出登录"
+                    android:textColor="#e14123"
+                    android:textSize="16sp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="#dddddd" />
+        </LinearLayout>
+    </ScrollView>
+    <com.zzb.mynew.view.userview.UserGuideView
+        android:id="@+id/guideView"
+        app:MaskBlurStyle="solid"
+        app:maskColor="#50000000"
+        app:tipView="@drawable/tip_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</FrameLayout>

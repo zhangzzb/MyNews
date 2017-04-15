@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+   <include layout="@layout/titlle_bar"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|top"
+            android:hint="你此刻的心情..."
+            android:maxLines="6"
+            android:minLines="5"
+            android:padding="15dp"
+            android:textSize="@dimen/font_normal2" />
+        <View
+            android:id="@+id/view_gad"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            />
+        <com.zzb.mynew.common.commonwidget.NoScrollGridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:verticalSpacing="6dp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/compose_clear_selector"
+        android:clickable="true"
+        android:layout_margin="10dp"
+        android:layout_gravity="right"
+        android:text="11"
+        android:textColor="@color/main_gray"
+        android:textSize="@dimen/text_size_14" />
+    <TextView
+        android:id="@+id/tv_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_send"
+        android:gravity="center"
+        android:padding="13dp"
+        android:text="提交"
+        android:textSize="@dimen/font_normal" />
+
+</LinearLayout>

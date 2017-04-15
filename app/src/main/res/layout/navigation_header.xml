@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@color/colorPrimary"
+              android:padding="16dp"
+              android:layout_height="160dp">
+    <ImageView
+        android:id="@+id/iv_user"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:paddingTop="16dp"
+        android:src="@drawable/avatar_default"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:textColor="#FFF"
+        android:text="爱迪生"
+        />
+</LinearLayout>

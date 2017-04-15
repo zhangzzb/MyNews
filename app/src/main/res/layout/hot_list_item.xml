@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_feed_1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f0f0f0"
+    card_view:cardElevation="3dp"
+    android:padding="10dp"
+    card_view:cardPreventCornerOverlap="true"
+    card_view:cardUseCompatPadding="true"
+    card_view:contentPadding="8dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/iv_image"
+            android:layout_toLeftOf="@+id/iv_image"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="新闻标题新闻标题新闻标题新闻标题新新闻标题新闻标题新闻标题新闻标题新新闻标题新闻标题新闻标题新闻标题新新闻标题新闻标题新闻标题新闻标题新新闻标题新闻标题新闻标题新闻标题新"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/tv_sourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_image"
+            android:layout_toStartOf="@+id/iv_image"
+            android:layout_toLeftOf="@+id/iv_image"
+            android:layout_alignParentLeft="true"
+            android:text="新闻热点"
+            android:textColor="@color/role_right_gray"
+            />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_sourse"
+            android:layout_toStartOf="@+id/iv_image"
+            android:layout_toLeftOf="@+id/iv_image"
+            android:text="03-29 09:28"
+            android:textColor="@color/role_right_gray"/>
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:padding="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_image_loading"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

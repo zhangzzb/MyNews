@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/drawer_menu_me"
+        android:showAsAction="always"
+        android:icon="@drawable/drawer_menu_icon_setting"
+        android:title="我的动态"
+      />
+    <item
+        android:id="@+id/drawer_menu_aboutsoft"
+        android:icon="@drawable/drawer_menu_icon_setting"
+        android:title="关于软件"
+        android:showAsAction="always"/>
+    <item
+        android:id="@+id/drawer_menu_scan"
+        android:icon="@drawable/drawer_menu_icon_setting"
+        android:title="扫描登录"
+        android:showAsAction="always"/>
+    <item
+        android:id="@+id/drawer_menu_theme"
+        android:icon="@drawable/drawer_menu_icon_setting"
+        android:title="主题切换"
+        android:showAsAction="always"/>
+    </group>
+    <item
+        android:title="系统设置">
+        <menu>
+            <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/drawer_menu_setting"
+                android:icon="@drawable/drawer_menu_icon_setting"
+                android:title="设置"
+                android:showAsAction="always"/>
+            <item
+                android:id="@+id/drawer_menu_exit"
+                android:icon="@drawable/drawer_menu_icon_exit"
+                android:title="退出"
+                android:showAsAction="always"/>
+            </group>
+        </menu>
+    </item>
+</menu>

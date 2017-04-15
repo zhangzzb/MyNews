@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+    <!--
+* 滑动指示器pstsindicatorcolor颜色
+* 在视图的底部的全宽度的线pstsunderlinecolor颜色
+* 选项卡之间的分隔pstsdividercolor颜色
+* 滑动指示器pstsindicatorheightheight
+* 在视图的底部的全宽度的线pstsunderlineheight高度
+* pstsdividerpadding顶部和底部填充的分频器
+* pststabpaddingleftright左、右填充每个选项卡
+* pstsscrolloffset卷轴被选择的标签的偏移
+* pststabbackground背景绘制的每个标签，应该是一个statelistdrawable
+* pstsshouldexpand如果设置为TRUE，每个标签都给予同样的重量，默认为false
+* pststextallcaps如果为真，所有选项卡标题都是大写，默认为true
+* 扩展4个属性 ， 分别是 默认的字体大小 和颜色 ，和选中后的 字体大小和颜色
+*/ -->
+    <com.zzb.mynew.view.PagerSlidingTabStrip
+        android:id="@+id/tab_strip"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        app:pstsShouldExpand="true"
+        app:pstsIndicatorHeight="2dp"
+        app:pstsUnderlineHeight="2dp"
+        app:pstsIndicatorColor="@color/colorPrimary"
+        app:pstsTabTextColor="@color/black_light"
+        app:pstsTabBackground="@android:color/transparent"
+        app:pstsDividerColor="@android:color/transparent"
+        app:pstsSelectedTabTextColor="@color/colorPrimary">
+    </com.zzb.mynew.view.PagerSlidingTabStrip>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+</LinearLayout>
