@@ -1,5 +1,5 @@
 
-# 实践！业余时间整理巩固所学知识编写的一款新闻阅读App
+# 实践！业余时间编写的一款新闻阅读App
 * 整体项目基于 （MVC + OKHttp + RecyclerView）
 * 代码优化抽取主要类有BaseActivity、BaseFragment、BaseListFragment、BaseViewPagerFragment.
 * 使用recycleview+BaseRecyclerViewHelper第三方优秀库实现整体界面
