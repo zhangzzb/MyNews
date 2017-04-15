@@ -7,7 +7,7 @@
 * 使用OKhttp封装实现网络请求、请求缓存
 * 实现了二维码扫描、换肤、侧滑返回、MD风格、FloatingActionMenu悬浮菜单
 * 用到了toolbar、cardview、NavigationView、FloatingActionButton、SwipeRefreshLayout、CoordinatorLayout、CollapsingToolbarLayout等新UI控件渲染界面
-* 使用了诸如：OKhttp、EventBus、bufferknife、skin-loader-lib、photopicker、glide、jiecaoplayer、vitamio、BaseRecyclerViewHelper等优秀开源项目
+* 使用了诸如：OKhttp、EventBus、bufferknife、skin-loader-lib、photopicker、glide、jiecaoplayer、vitamio、zxing、PhotoView、BaseRecyclerViewHelper等优秀开源项目
 * 后期将陆续使用MVP模式、RXJava、Retrofit等新技术插入项目当中、希望关注我的朋友能与我交流学习
 
 ### 主界面
